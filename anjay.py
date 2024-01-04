@@ -1,1 +1,1 @@
-print('apasih')
+print('cobain dulu ngepush lagiii')
