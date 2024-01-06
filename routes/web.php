@@ -38,11 +38,12 @@ Route::get('/daftaruser', function () {
     return view('daftaruser');
 });
 
-Route::get('/admin/user/transaksi', function () {
+Route::get('/coba', function () {
     return view('transaksi', [
-        "title" => "Transaksi"
+        "title" => "Alstore"
     ]);
 });
+
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
