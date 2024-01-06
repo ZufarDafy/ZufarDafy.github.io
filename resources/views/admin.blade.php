@@ -1,35 +1,12 @@
 @extends('layouts.admin')
 
 @section('container')
-<div class="wrapper">
-  <!-- Sidebar (Navigasi) -->
-  <nav class="sidebar">
-      <div class="logo">
-          <img src="img/alstore.png" alt="Alstore">
-          <span style="font-weight: bold; font-size: 20px">Alstore</span>
-      </div>
-      <table class="table">
-            <tr>
-              <td scope="row">
-                  <img src="img/game.png" alt="Game">  
-                  <div class="title">Game</div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                  <img src="img/users.png" alt="Users">  
-                  <div class="title">Users</div>
-              </td>
-            </tr>
-        </table>
-  </nav>
 
   <!-- Konten Utama -->
   <main class="content">
       <div class="judul">Game</div>
 
       <div id="container2">
-          
           <div class="baris-game">
             <div class="game-block" style="margin-right: 50px">
               <img src="img/ML.png" alt="Mobile Legends" class="game-icon">
@@ -80,7 +57,6 @@
           </div>
         </div>
   </main>
-</div>
 
 @endsection
 
