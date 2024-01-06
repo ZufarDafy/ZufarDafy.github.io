@@ -8,10 +8,12 @@
 
       <div id="container2">
           <div class="baris-game">
-            <div class="game-block" style="margin-right: 50px">
-              <img src="img/ML.png" alt="Mobile Legends" class="game-icon">
-              <div>Mobile Legends</div>
-            </div>
+            <a href="/editgame/{{ $title }}">
+              <div class="game-block" style="margin-right: 50px">
+                <img src="img/ML.png" alt="Mobile Legends" class="game-icon">
+                <div>Mobile Legends</div>
+              </div>
+            </a>
         
             <div class="game-block">
               <img src="img/Honkai.png" alt="Honkai Star Rail" class="game-icon">

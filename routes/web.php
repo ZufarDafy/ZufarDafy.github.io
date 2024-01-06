@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::get('/admin', function () {
     return view('admin', [
-        "title" => "admin"
+        "title" => "Admin"
     ]);
 });
 
@@ -35,7 +35,16 @@ Route::get('/editgame', function () {
 });
 
 Route::get('/daftaruser', function () {
-    return view('daftaruser');
+    return view('daftaruser', [
+        "title" => "Daftar Users"
+    ]);
+});
+
+Route::get('/coba', function () {
+    return view('coba', [
+        "title" => "Mobile Legends",
+        "game" => "ML"
+    ]);
 });
 
 Route::get('/coba', function () {

@@ -34,8 +34,10 @@
     
     <div class="baris-game">
       <div class="game-block">
-        <img src="img/ML.png" alt="Mobile Legends" class="game-icon">
-        <div>Mobile Legends</div>
+        <a href="#">
+          <img src="img/ML.png" alt="Mobile Legends" class="game-icon">
+          <div>Mobile Legends</div>
+        </a>
       </div>
   
       <div class="game-block">
