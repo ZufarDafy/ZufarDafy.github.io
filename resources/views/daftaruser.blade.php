@@ -47,7 +47,7 @@
                 <tr>
                   <th scope="col">No.</th>
                   <th scope="col">Nama Pengguna</th>
-                  <th scope="col">Cash</th>
+                  <th scope="col">A-Coin</th>
                   <th scope="col">Transaksi</th>
                 </tr>
               </thead>

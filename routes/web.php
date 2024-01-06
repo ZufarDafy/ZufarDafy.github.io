@@ -16,15 +16,22 @@ use App\Http\Controllers\RegisterController;
 */
 
 Route::get('/', function () {
-    return view('exp');
+    return view('exp', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/admin', function () {
-    return view('admin');
+    return view('admin', [
+        "title" => "admin"
+    ]);
 });
 
 Route::get('/editgame', function () {
-    return view('editgame');
+    return view('editgame', [
+        "title" => "Mobile Legends",
+        "game" => "ML"
+    ]);
 });
 
 Route::get('/daftaruser', function () {

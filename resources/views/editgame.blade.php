@@ -40,7 +40,7 @@
 
             <div class="atastabel">
               <img src="img/ML.png" alt="Mobile Legends">
-              <div>Mobile Legends</div>
+              <div>{{ $game }}</div>
             </div>
             <table class="table table-dark">
               <thead>
