@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/{{ ($title == "Admin") ? 'admingame.css' : '' }}">
+  <link rel="stylesheet" href="css/{{ ($title == "Mobile Legends") ? 'editgame.css' : '' }}">
+  <link rel="stylesheet" href="css/{{ ($title == "Daftar Users") ? 'daftaruser.css' : '' }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -24,13 +27,19 @@
             <tr>
               <td scope="row">
                   <img src="img/game.png" alt="Game">  
-                  <div class="title">Game</div>
+                  <div class="title" style="{{ ($title == "Mobile Legends") ? 'color: orange' : ''  }}"  >Game</div>
               </td>
             </tr>
             <tr>
               <td scope="row">
                   <img src="img/users.png" alt="Users">  
-                  <div class="title">Users</div>
+                  <div class="title " style="{{ ($title == "Daftar Users") ? 'color: orange' : ''  }}" >Users</div>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">
+                  <img src="img/logout.png" alt="Log Out">  
+                  <a href="login"><div class="title">Log Out</div></a>
               </td>
             </tr>
         </table>
