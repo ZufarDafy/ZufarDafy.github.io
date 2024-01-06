@@ -47,9 +47,9 @@ Route::get('/coba', function () {
     ]);
 });
 
-Route::get('/coba', function () {
+Route::get('/transaksi', function () {
     return view('transaksi', [
-        "title" => "Alstore"
+        "title" => "Transaksi"
     ]);
 });
 
