@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('exp');
 });
+
+Route::get('/ml', function () {
+    return view('ml');
+});
+
+Route::get('/ff', function () {
+    return view('ff');
+});
