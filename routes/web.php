@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('exp', [
+        "title" => "Home"
+    ]);
 });
+
+Route::get('/admin', function () {
+    return view('admin', [
+        "title" => "admin"
+    ]);
+});
+
+Route::get('/editgame', function () {
+    return view('editgame', [
+        "title" => "Mobile Legends",
+        "game" => "ML"
+    ]);
+});
+
+Route::get('/daftaruser', function () {
+    return view('daftaruser');
+});
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index']);
