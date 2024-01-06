@@ -1,0 +1,15 @@
+.content .judul {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.atastabel {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* untuk vertikal align */
+    gap: 30px; /* jarak antara gambar dan teks */
+    font-size: 30px;
+}
