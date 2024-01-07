@@ -163,7 +163,7 @@
   @csrf
   <button type="button" class="btn btn-primary btn-saldo" data-bs-toggle="modal" data-bs-target="#saldoModal"
     style="text-align: left; width: 160px; height: 40px;">
-    Saldo: {{ auth()->user()->acoin }}
+    Saldo: Rp {{ auth()->user()->acoin }}
   </button>
 </div>
 
