@@ -5,20 +5,54 @@ use App\Models\User;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TopUpController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\DashboardPostController;
+use App\Models\Produk;
+use App\Models\Game;
 
 
+Route::get('/about', function () {
+    return view('about', [
+        "name" => "Muhammad Zufar Dafy",
+        "email" => "dafyluck@gmail.com",
+        "image" => "ML.png",
+        'title' => 'About'
+    ]);
+});
+
+Route::get('/produks', [ProdukController::class,'index']);
+Route::get('produks/{produk}',  [ProdukController::class,'show']);
+
+Route::get('/games', function(){
+    return view('games', [
+        'title' => 'Daftar Game',
+        'active' => 'games',
+        'games' => Game::all()
+    ]);
+});
+
+Route::get('/games/{game:slug}', function(Game $game){
+    return view('produks', [
+        'title' => "Produk Game : $game->nama",
+        'active' => 'games',
+        'produks' => $game->produks->load(['game', 'user']),
+    ]);
+});
+
+Route::get('/users/{user:username}', function(User $user){
+    return view('game', [
+        'title' => "User : $user->name",
+        'produks' => $user->produk->load('game', 'user'),
+    ]);
+});
+
+Route::get('/dashboard', function(){
+    return view('dashboard.index');
+});
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::resource('/dashboard/produks', DashboardPostController::class);
+
 
 Route::get('/', function () {
     return view('exp', [

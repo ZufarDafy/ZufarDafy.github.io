@@ -11,15 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaksis', function (Blueprint $table) {
+        Schema::create('games', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('tgltrans');
-            $table->string('uname');
-            $table->string('uid');
-            $table->string('nama_game');
-            $table->string('nama_produk');
-            $table->string('harga');
-            $table->boolean('proses');
+            $table->string('nama')->unique();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }
@@ -29,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaksis');
+        Schema::dropIfExists('games');
     }
 };
