@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\TopUpController;
+use App\Http\Controllers\PaymentController;
 
 
 
@@ -119,3 +120,5 @@ Route::get('/genshin', [ProdukController::class, 'indexGenshin']);
 Route::get('/pubg', [ProdukController::class, 'indexPUBGMobile']);
 Route::get('/cod', [ProdukController::class, 'indexCODMobile']);
 Route::post('/top-up', [TopUpController::class, 'updateSaldo'])->name('topup.saldo');
+
+Route::get('/payment', [PaymentController::class, 'store'])->name('payment.test');
