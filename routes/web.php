@@ -56,6 +56,13 @@ Route::get('/coba', function () {
     ]);
 });
 
+Route::get('/coba', function () {
+    return view('transaksi', [
+        "title" => "Alstore"
+    ]);
+});
+
+
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
