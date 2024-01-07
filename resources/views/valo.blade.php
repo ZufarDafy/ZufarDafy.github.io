@@ -4,11 +4,11 @@
 <div style="text-align: center;">
 
     <!-- Banner -->
-    <img src="img/banner.jpg" class="img-fluid" alt="banner" style="width: 100%;">
+    <img src="img/valoban.jpg" class="img-fluid" alt="banner" style="width: 100%;">
 
     <!-- Teks Mobile Legends di sebelah kiri dengan margin-top dan latar belakang putih -->
     <div style="text-align: left; margin-left: 5%;">
-        <h3 style="margin-top: 30px; display: inline-block; padding: 5px; font-weight: bold;">Mobile Legends: Bang Bang
+        <h3 style="margin-top: 30px; display: inline-block; padding: 5px; font-weight: bold;">VALORANT
         </h3>
     </div>
 
@@ -43,16 +43,13 @@
     <!-- Form User ID -->
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan User ID</p>
+        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan Riot ID</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            <input type="text" class="form-control" placeholder="Masukkan Riot ID" aria-label="Username">
         </div>
         <p style="font-size: smaller; margin-top: 10px; color: #808080;">
-            Untuk mengetahui User ID Anda, silakan klik menu profile dibagian kiri atas pada menu utama game.
-            User ID akan terlihat dibagian bawah Nama Karakter Game Anda. Silakan masukkan User ID Anda untuk
-            menyelesaikan transaksi.
-            Contoh : 12345678(1234).
+            Untuk menemukan Riot ID Anda, buka halaman profil akun dan salin Riot ID+Tag menggunakan tombol yang
+            tersedia disamping Riot ID. (Contoh: Westbourne#SEA)
         </p>
 
     </div>
@@ -60,19 +57,8 @@
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">2. Pilih Nominal Top Up</p>
-        <p style="color: #17232f;">Pilih Kategori</p>
+        <p style="color: #17232f; margin-top: 20px;">Pilih items</p>
         <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1" style="width: 30%;">
-            <img src="img/dm.png" alt="Diamond Image" style="max-width: 100%; height: auto; margin-right: 10px;">
-            Diamond
-        </label>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2" style="width: 30%;">
-            <img src="img/bundleml.png" alt="Bundle" style="max-width: 100%; height: auto; margin-right: 10px;">
-            Bundle
-        </label>
-        <p style="color: #17232f; margin-top: 70px;">Pilih items</p>
-        <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off">
         <label class="btn btn-secondary" for="option1">Radio</label>
         <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
         <label class="btn btn-secondary" for="option2">Radio</label>
@@ -89,57 +75,34 @@
         </div>
     </div>
 
-    <div class="floating-login">
-        <a href="/login">
-            <button>Login</button></a>
-    </div>
-
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 100%; text-align: center;">
-        <p style="color: #17232f; font-size: 1.25rem; font-weight: bold;">Top Up ML Diamonds, Twilight Pass & Weekly
-            Diamond Pass di Indonesia</p>
+        <p style="color: #17232f; font-size: 1.25rem; font-weight: bold;">Cara terbaik top up Valorant Points di
+            Indonesia</p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
-            Hanya butuh beberapa detik saja untuk beli Diamond, Twilight Pass and Weekly Diamond Pass di Alstore,
-            top-up menjadi mudah, aman, dan praktis. Alstore dipercaya oleh jutaan gamers & pengguna aplikasi di
-            Asia Tenggara termasuk Indonesia.
-            <a href="#" style="display: block;">Klik disini untuk memulai.</a>
+            Hanya perlu beberapa detik untuk top up VALORANT Points di Alstore, tempat top up yang mudah, aman, dan
+            nyaman. Kami dipercaya oleh para gamers dan pengguna aplikasi di Indonesia.
+            <a href="#" style="display: block;">Top up Sekarang!.</a>
         </p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
-            Dengan ML Diamonds kamu bisa mengakses konten premium dari hero terbaru hingga berbagai pilihan skin
-            hero dan lainnya. Untuk mendapatkan nilai terbaik dari uang kamu, berikut manfaat Twilight Pass & Weekly
-            Diamond Pass di bawah ini.
-        </p>
-        <p
-            style="font-size: .875rem; color: #17232f; width: 95%; margin-top: -20px; margin-left: auto; margin-right: auto; text-align: center; white-space: pre-line;">
-            Twilight Pass:
-            Instant Reward: 200 Tickets, 1 Glorious General Trial Card, 1 Diamond Hero Trial Card Pack (1-Day)
-            Level 8: 200 Tickets, Eudora’s “Flame Red Lips” Skin, 2 Diamond Hero Trial Card Pack (1-Day)
-            Level 10: 300 Tickets, 1 Star Protection Card, 2 Deluxe Skin Trial Card Pack (1-Day)
-            Level 12: 350 Tickets, 1 Double EXP Card (3-Days), 5 Luxury Ticket
-            Level 15: 350 Tickets, Miya’s Exclusive “Suzuhime” Skin, 2 Epic Skin Trial Card (1-Day)
-            Level 20: 500 Tickets, Twilight Pass Avatar Border, 10 Luxury Ticket.
-        </p>
-        <p
-            style="font-size: .875rem; color: #17232f; width: 95%; margin-top: -20px; margin-left: auto; margin-right: auto; text-align: center; white-space: pre-line;">
-            Weekly Diamond Pass:
-            - 210 diamonds
-            - 210 Starlight Member points
-            - 7 Choice Bundle
+            Dengan VALORANT Points, kamu bisa akses konten premium seperti Battle Pass, Weapon Skins, New Agents, dan
+            Radianite Points. Kami juga bisa partisipasi di event eksklusif yang tersedia dalam game dan masih banyak
+            benefir lainnya!
         </p>
         <p style="color: #17232f; font-size: .875rem; margin-top: 30px; font-weight: bold;">Mengapa memilih Alstore
             untuk top up
-            Mobile Legends?</p>
+            Valorant?</p>
         <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Mudah dan Cepat</p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
             Kamu hanya perlu hitungan detik untuk menyelesaikan pembelian di Alstore.
         </p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Garansi sampai</p>
+        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Instan & aman</p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Mobile Legends pembelian dijamin langsung masuk ke akun Kamu.
+            Pembelian top up akan langsung dikirim ke in-game account.
         </p>
         <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Customer support kelas dunia</p>
         <p
@@ -160,7 +123,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Bagaimana cara top up Diamond ML?
+                        Bagaimana cara beli VALORANT Points?
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
@@ -177,7 +140,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Bagaimana cara top up Twilight Pass?
+                        Bagaimana Cara Beli VALORANT Battle Pass?
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
@@ -194,7 +157,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Dimana dapat menemukan promo dan penawaran untuk Mobile Legends?
+                        Dimana dapat menemukan promo dan penawaran untuk Valorant?
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -208,6 +171,12 @@
         </div>
         <!--Beres Text -->
     </div>
+
+    <div class="floating-login">
+        <a href="/login">
+            <button>Login</button></a>
+    </div>
+
 
     <div style="background-color: #E8F953; padding: 20px; display: inline-block; width: 100%; text-align: left;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 70px;">Butuh Bantuan?</p>

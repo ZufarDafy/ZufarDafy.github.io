@@ -22,12 +22,43 @@ Route::get('/', function () {
 });
 
 Route::get('/ml', function () {
-    return view('ml');
+    return view('ml', [
+        "title" => "Mobile Legends"
+    ]);
 });
 
+
+
 Route::get('/ff', function () {
-    return view('ff');
+    return view('ff', [
+        "title" => "Free Fire"
+    ]);
 });
+
+Route::get('/cod', function () {
+    return view('cod', [
+        "title" => "Call Of Duty Mobile"
+    ]);
+});
+
+Route::get('/pubg', function () {
+    return view('pubg', [
+        "title" => "PUBG Mobile"
+    ]);
+});
+
+Route::get('/valo', function () {
+    return view('valo', [
+        "title" => "Valorant"
+    ]);
+});
+
+Route::get('/genshin', function () {
+    return view('genshin', [
+        "title" => "Genshin Impact"
+    ]);
+});
+
 Route::get('/admin', function () {
     return view('admin', [
         "title" => "Admin"
@@ -56,3 +87,4 @@ Route::get('/coba', function () {
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
+

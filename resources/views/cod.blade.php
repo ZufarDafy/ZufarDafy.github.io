@@ -4,11 +4,11 @@
 <div style="text-align: center;">
 
     <!-- Banner -->
-    <img src="img/banner.jpg" class="img-fluid" alt="banner" style="width: 100%;">
+    <img src="img/codban.jpg" class="img-fluid" alt="banner" style="width: 100%;">
 
     <!-- Teks Mobile Legends di sebelah kiri dengan margin-top dan latar belakang putih -->
     <div style="text-align: left; margin-left: 5%;">
-        <h3 style="margin-top: 30px; display: inline-block; padding: 5px; font-weight: bold;">Mobile Legends: Bang Bang
+        <h3 style="margin-top: 30px; display: inline-block; padding: 5px; font-weight: bold;">Call of Duty Mobile
         </h3>
     </div>
 
@@ -43,16 +43,13 @@
     <!-- Form User ID -->
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan User ID</p>
+        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan Player ID</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            <input type="text" class="form-control" placeholder="Masukkan Player ID" aria-label="Username">
         </div>
         <p style="font-size: smaller; margin-top: 10px; color: #808080;">
-            Untuk mengetahui User ID Anda, silakan klik menu profile dibagian kiri atas pada menu utama game.
-            User ID akan terlihat dibagian bawah Nama Karakter Game Anda. Silakan masukkan User ID Anda untuk
-            menyelesaikan transaksi.
-            Contoh : 12345678(1234).
+            Untuk menemukan PlayerID Anda, klik ikon 'settings' yang terletak di sebelah kanan layar dan klik tab 'LEGAL
+            AND PRIVCY', Anda dapat menemukan PlayerID Anda di sini.
         </p>
 
     </div>
@@ -60,19 +57,8 @@
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">2. Pilih Nominal Top Up</p>
-        <p style="color: #17232f;">Pilih Kategori</p>
+        <p style="color: #17232f; margin-top: 20px;">Pilih items</p>
         <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1" style="width: 30%;">
-            <img src="img/dm.png" alt="Diamond Image" style="max-width: 100%; height: auto; margin-right: 10px;">
-            Diamond
-        </label>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2" style="width: 30%;">
-            <img src="img/bundleml.png" alt="Bundle" style="max-width: 100%; height: auto; margin-right: 10px;">
-            Bundle
-        </label>
-        <p style="color: #17232f; margin-top: 70px;">Pilih items</p>
-        <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off">
         <label class="btn btn-secondary" for="option1">Radio</label>
         <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
         <label class="btn btn-secondary" for="option2">Radio</label>
@@ -96,62 +82,33 @@
 
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 100%; text-align: center;">
-        <p style="color: #17232f; font-size: 1.25rem; font-weight: bold;">Top Up ML Diamonds, Twilight Pass & Weekly
-            Diamond Pass di Indonesia</p>
+        <p style="color: #17232f; font-size: 1.25rem; font-weight: bold;">Alstore - Cara Paling Mudah Top Up CODM Murah
+            di Indonesia</p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
-            Hanya butuh beberapa detik saja untuk beli Diamond, Twilight Pass and Weekly Diamond Pass di Alstore,
-            top-up menjadi mudah, aman, dan praktis. Alstore dipercaya oleh jutaan gamers & pengguna aplikasi di
-            Asia Tenggara termasuk Indonesia.
-            <a href="#" style="display: block;">Klik disini untuk memulai.</a>
+            Hanya butuh beberapa detik saja untuk membeli COD Points (CP) Call of Duty Mobile. COD Points (CP) bisa kamu
+            gunakan untuk membeli Battle Pass premium, skin senjata, hingga experience card dan masih banyak lagi! Kami
+            dipercaya oleh jutaan gamers & pengguna aplikasi di Asia Tenggara termasuk di Indonesia.
+            <a href="#" style="display: block;">Klik disini untuk memulai top up.</a>
+        </p>
+        <p style="color: #17232f; font-size: .875rem; margin-top: 30px; font-weight: bold;">Tentang Call of Duty Mobile:
+        </p>
+        <p
+            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; margin-top: -15px;">
+            Nikmati game penuh aksi dari seri Call of Duty Mobile® Mobile yang memacu adrenalin dimanapun kamu berada.
+            Mainkan berbagai macam pilihan game mode melawan musuh di map favorit kalian seperti Nuketown dan Crash,
+            dengan pengalaman optimal di HP-mu.
         </p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
-            Dengan ML Diamonds kamu bisa mengakses konten premium dari hero terbaru hingga berbagai pilihan skin
-            hero dan lainnya. Untuk mendapatkan nilai terbaik dari uang kamu, berikut manfaat Twilight Pass & Weekly
-            Diamond Pass di bawah ini.
+            Bentuk skuad bersama teman-temanmu, main sesuai gayamu dengan menggunakan UAV Recon atau Predator Missile
+            dan modifikasi senjatamu untuk melawan musuh.
         </p>
         <p
-            style="font-size: .875rem; color: #17232f; width: 95%; margin-top: -20px; margin-left: auto; margin-right: auto; text-align: center; white-space: pre-line;">
-            Twilight Pass:
-            Instant Reward: 200 Tickets, 1 Glorious General Trial Card, 1 Diamond Hero Trial Card Pack (1-Day)
-            Level 8: 200 Tickets, Eudora’s “Flame Red Lips” Skin, 2 Diamond Hero Trial Card Pack (1-Day)
-            Level 10: 300 Tickets, 1 Star Protection Card, 2 Deluxe Skin Trial Card Pack (1-Day)
-            Level 12: 350 Tickets, 1 Double EXP Card (3-Days), 5 Luxury Ticket
-            Level 15: 350 Tickets, Miya’s Exclusive “Suzuhime” Skin, 2 Epic Skin Trial Card (1-Day)
-            Level 20: 500 Tickets, Twilight Pass Avatar Border, 10 Luxury Ticket.
-        </p>
-        <p
-            style="font-size: .875rem; color: #17232f; width: 95%; margin-top: -20px; margin-left: auto; margin-right: auto; text-align: center; white-space: pre-line;">
-            Weekly Diamond Pass:
-            - 210 diamonds
-            - 210 Starlight Member points
-            - 7 Choice Bundle
-        </p>
-        <p style="color: #17232f; font-size: .875rem; margin-top: 30px; font-weight: bold;">Mengapa memilih Alstore
-            untuk top up
-            Mobile Legends?</p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Mudah dan Cepat</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Kamu hanya perlu hitungan detik untuk menyelesaikan pembelian di Alstore.
-        </p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Garansi sampai</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Mobile Legends pembelian dijamin langsung masuk ke akun Kamu.
-        </p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Customer support kelas dunia</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Tim customer support Kami selalu siap membantu 24jam. Kirim pesanmu melalui <a href='#'>form
-                berikut</a>, dan Kami akan respon segera!
-        </p>
-
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Promo Menarik</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Jangan lewatkan deals terbaik, giveaways, dan masih banyak lagi, hanya di Alstore!
+            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
+            Kalau kamu belum pernah mendengar Call of Duty Mobile® Mobile - Garena, tidak masalah. Yang perlu kamu
+            ketahui adalah game ini akan memberikan pengalaman bermain FPS terbaik di HP. Siapkan senjatamu dan download
+            sekarang juga!
         </p>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -160,7 +117,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Bagaimana cara top up Diamond ML?
+                        Bagaimana cara top up CP CODM?
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
@@ -175,26 +132,9 @@
             <div class="accordion-item" style="margin-bottom: 20px;">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
-                        style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Bagaimana cara top up Twilight Pass?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
-                    style="background-color: #F0F0F0; color: #17232f">
-                    <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second item's accordion body.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item" style="margin-bottom: 20px;">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Dimana dapat menemukan promo dan penawaran untuk Mobile Legends?
+                        Dapatkan info promo terbaik CODM
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
