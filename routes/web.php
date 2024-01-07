@@ -5,6 +5,10 @@ use App\Models\User;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\TopUpController;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -67,7 +71,7 @@ Route::get('/admin', function () {
     ]);
 });
 
-Route::get('/editgame', function () {
+Route::get('/editgame/Admin', function () {
     return view('editgame', [
         "title" => "Mobile Legends",
         "game" => "ML"
@@ -88,12 +92,18 @@ Route::get('/coba', function () {
     ]);
 });
 
-Route::get('/coba', function () {
+Route::get('/transaksi', function () {
     return view('transaksi', [
-        "title" => "Alstore"
+        "title" => "Transaksi"
     ]);
 });
 
+Route::get('/cobaedit', function () {
+    return view('cobaedit', [
+        "title" => "Mobile Legends",
+        "game" => "ML"
+    ]);
+});
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -108,3 +118,4 @@ Route::get('/valo', [ProdukController::class, 'indexValorant']);
 Route::get('/genshin', [ProdukController::class, 'indexGenshin']);
 Route::get('/pubg', [ProdukController::class, 'indexPUBGMobile']);
 Route::get('/cod', [ProdukController::class, 'indexCODMobile']);
+Route::post('/top-up', [TopUpController::class, 'updateSaldo'])->name('topup.saldo');

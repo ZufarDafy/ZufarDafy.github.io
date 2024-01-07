@@ -174,16 +174,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="/top-up" method="post" style="text-align: left;">
-          <!-- Tambahkan elemen input untuk jumlah isi saldo di sini -->
+        <form action="{{ route('topup.saldo') }}" method="post" id="saldoForm" style="text-align: left;">
+          @csrf
           <label for="jumlah-saldo" class="form-label" style="color: black;">Jumlah Isi Saldo:</label>
-          <input type="text" class="form-control" id="jumlah-saldo" name="jumlah-saldo"
-            placeholder="Masukkan jumlah saldo">
+          <input type="text" class="form-control" id="jumlah-saldo" name="jumlah-saldo" placeholder="Masukkan jumlah saldo">
         </form>
       </div>
       <div class="modal-footer">
-        <!-- Tombol OK -->
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-primary" id="okButton" data-bs-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -194,6 +193,8 @@
     <button>Login</button></a>
 </div>
 @endauth
+
+
 
 <!-- Your existing "See All" button -->
 <div id="see-all-button" onclick="toggleVisibility()">Tampilkan Semua</div>
@@ -378,6 +379,28 @@
     seeAllButton.textContent = (seeAllButton.textContent === 'Tampilkan Semua') ? 'Tampilkan Sebagian' : 'Tampilkan Semua';
   }
 </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Menjalankan submit form saat tombol "OK" diklik
+    $('#okButton').on('click', function() {
+      $('#saldoForm').submit();
+    });
+
+    // Fokuskan ke input jumlah saldo saat modal muncul
+    $('#saldoModal').on('shown.bs.modal', function() {
+      $('#jumlah-saldo').focus();
+    });
+
+    // Menghentikan default submit form dan kemudian submit form
+    $('#saldoForm').on('submit', function(e) {
+      e.preventDefault();
+      $(this).unbind('submit').submit();
+    });
+  });
+</script>
+
 
 <!-- Your existing script -->
 @endsection
