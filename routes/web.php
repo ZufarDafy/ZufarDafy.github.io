@@ -53,6 +53,12 @@ Route::get('/transaksi', function () {
     ]);
 });
 
+Route::get('/cobaedit', function () {
+    return view('cobaedit', [
+        "title" => "Mobile Legends",
+        "game" => "ML"
+    ]);
+});
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
