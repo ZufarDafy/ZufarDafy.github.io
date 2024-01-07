@@ -39,16 +39,15 @@ class PaymentController extends Controller
      */
     public function store(Request $request)
     {
-        //
         DB::table('transaksis')->insert([
             'TglTrans' => Carbon::now(),
             'uname' => auth()->user()->username,
-            'nama_game' => request('namaGame'), // Ganti dengan nama game yang sesuai
-            'nama_produk' => request('namaProduk'), // Mengambil nilai dari form
-            'harga' => request('harga'), // Mengambil nilai dari form
-
+            'nama_game' => $request->input('namaGame'), // Ganti dengan nama game yang sesuai
+            'nama_produk' => $request->input('namaProduk'), // Mengambil nilai dari form
+            'harga' => $request->input('harga'), // Mengambil nilai dari form
         ]);
-        return redirect()->back();
+
+        return redirect()->back()->with('success', 'Transaksi berhasil!');
     }
 
     /**

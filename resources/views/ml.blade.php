@@ -122,8 +122,9 @@
                         <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Struk Pembelian</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" action="{{ route('payment.test') }}" method="post">
-                        <!-- Informasi Pembelian -->
+                    <div class="modal-body">
+                        <form action="{{ route('payment.test') }}" method="post">
+                            <!-- Informasi Pembelian -->
                         <div class="mb-3">
                             <label for="username" class="form-label" style="color:black;">Username:</label>
                             <input type="text" class="form-control" id="username" name="username" readonly
@@ -151,6 +152,7 @@
 
                         <!-- Tombol Submit -->
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -383,6 +385,39 @@
         var uidInput = document.getElementById('UIDD');
         document.getElementById('uid').value = uidInput.value;
     }
+</script>
+
+<script>
+  $(document).ready(function() {
+    // Menjalankan submit form saat tombol "Beli Sekarang" diklik
+    $('#beliSekarangButton').on('click', function() {
+      // Memperbarui nilai input harga dan nama produk di modal pembelian
+      var selectedProduct = $('.product-button.active');
+      var hargaProduk = selectedProduct.data('harga');
+      var namaProduk = selectedProduct.data('nama');
+
+      $('#namaProduk').val(namaProduk);
+      $('#harga').val(hargaProduk);
+
+      // Munculkan modal pembelian
+      $('#myModal').modal('show');
+    });
+
+    // Fokuskan ke input jumlah saldo saat modal muncul
+    $('#saldoModal').on('shown.bs.modal', function() {
+      $('#jumlah-saldo').focus();
+    });
+
+    // Menghentikan default submit form dan kemudian submit form
+    $('#saldoForm').on('submit', function(e) {
+      e.preventDefault();
+      // Lakukan validasi atau proses lain yang diperlukan sebelum submit
+      // ...
+
+      // Setelah validasi atau proses lainnya, jalankan submit form
+      $(this).unbind('submit').submit();
+    });
+  });
 </script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
