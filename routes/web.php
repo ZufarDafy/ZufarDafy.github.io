@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TopUpController;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -66,7 +70,7 @@ Route::get('/admin', function () {
     ]);
 });
 
-Route::get('/editgame', function () {
+Route::get('/editgame/Admin', function () {
     return view('editgame', [
         "title" => "Mobile Legends",
         "game" => "ML"
@@ -106,3 +110,5 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::post('/top-up', [TopUpController::class, 'updateSaldo'])->name('topup.saldo');

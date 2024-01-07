@@ -33,39 +33,38 @@
 
     @auth
     <div class="floating-login">
-        @csrf
-        <button type="button" class="btn btn-primary btn-saldo" data-bs-toggle="modal" data-bs-target="#saldoModal"
-            style="text-align: left; width: 160px; height: 40px;">
-            Saldo: {{ auth()->user()->acoin }}
-        </button>
+    @csrf
+    <button type="button" class="btn btn-primary btn-saldo" data-bs-toggle="modal" data-bs-target="#saldoModal"
+        style="text-align: left; width: 160px; height: 40px;">
+        Saldo: {{ auth()->user()->acoin }}
+    </button>
     </div>
 
     <div class="modal" id="saldoModal" tabindex="-1" aria-labelledby="saldoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="saldoModalLabel" style="color: black;">Recharge Saldo</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="/top-up" method="post" style="text-align: left;">
-                        <!-- Tambahkan elemen input untuk jumlah isi saldo di sini -->
-                        <label for="jumlah-saldo" class="form-label" style="color: black;">Jumlah Isi Saldo:</label>
-                        <input type="text" class="form-control" id="jumlah-saldo" name="jumlah-saldo"
-                            placeholder="Masukkan jumlah saldo">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <!-- Tombol OK -->
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-                </div>
-            </div>
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="saldoModalLabel" style="color: black;">Recharge Saldo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+            <form action="{{ route('topup.saldo') }}" method="post" id="saldoForm" style="text-align: left;">
+            @csrf
+            <label for="jumlah-saldo" class="form-label" style="color: black;">Jumlah Isi Saldo:</label>
+            <input type="text" class="form-control" id="jumlah-saldo" name="jumlah-saldo" placeholder="Masukkan jumlah saldo">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="okButton" data-bs-dismiss="modal">OK</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
     </div>
     @else
     <div class="floating-login">
-        <a href="/login">
-            <button>Login</button></a>
+    <a href="/login">
+        <button>Login</button></a>
     </div>
     @endauth
 
@@ -228,5 +227,26 @@
 <footer style="background-color: #F0F0F0; color: black; padding: 10px; text-align: center;">
     <p style="margin-top: 10px;">&copy; 2024 Alstore. All rights reserved.</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Menjalankan submit form saat tombol "OK" diklik
+    $('#okButton').on('click', function() {
+      $('#saldoForm').submit();
+    });
+
+    // Fokuskan ke input jumlah saldo saat modal muncul
+    $('#saldoModal').on('shown.bs.modal', function() {
+      $('#jumlah-saldo').focus();
+    });
+
+    // Menghentikan default submit form dan kemudian submit form
+    $('#saldoForm').on('submit', function(e) {
+      e.preventDefault();
+      $(this).unbind('submit').submit();
+    });
+  });
+</script>
 
 @endsection
