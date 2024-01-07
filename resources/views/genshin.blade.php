@@ -4,11 +4,11 @@
 <div style="text-align: center;">
 
     <!-- Banner -->
-    <img src="img/ffban.jpg" class="img-fluid" alt="banner" style="width: 100%;">
+    <img src="img/genshinban.png" class="img-fluid" alt="banner" style="width: 100%;">
 
     <!-- Teks Mobile Legends di sebelah kiri dengan margin-top dan latar belakang putih -->
     <div style="text-align: left; margin-left: 5%;">
-        <h3 style="margin-top: 30px; display: inline-block; padding: 5px; font-weight: bold;">Free Fire Top-Up
+        <h3 style="margin-top: 30px; display: inline-block; padding: 5px; font-weight: bold;">Genshin Impact
         </h3>
     </div>
 
@@ -31,11 +31,6 @@
 
     </div>
 
-    <div class="floating-login">
-        <a href="/login">
-            <button>Login</button></a>
-    </div>
-
     <div
         style="background: linear-gradient(to right, #273A80, #482865); padding: 20px; display: flex; margin-top: 50px; width: 90%; text-align: left; border-radius: 10px; margin-left: 5%;">
         <img src="img/disc.gif" alt="Icon" style="width: 50px; height: 50px; margin-right:10px; margin-left: -5px;">
@@ -48,13 +43,23 @@
     <!-- Form User ID -->
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan Player ID</p>
+        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan UID dan pilih Server</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Masukkan Player ID" aria-label="Username">
+            <input type="text" class="form-control" placeholder="Masukkan UID" aria-label="Player ID">
+
+            <select class="form-control" aria-label="Server">
+                <option value="" selected disabled>Pilih Server</option>
+                <option value="server1">Amerika</option>
+                <option value="server2">Europe</option>
+                <option value="server2">Asia</option>
+                <option value="server2">TW, HK, MO</option>
+                <!-- Tambahkan opsi server lainnya sesuai kebutuhan -->
+            </select>
         </div>
         <p style="font-size: smaller; margin-top: 10px; color: #808080;">
-            Untuk menemukan ID Anda, klik pada ikon karakter. User ID tercantum di bawah nama karakter Anda. Contoh:
-            '5363266446'.
+            Untuk menemukan UID Anda, masuk pakai akun Anda. Klik pada tombol profile di pojok kiri atas layar. Temukan
+            UID dibawah avatar. Masukan UID Anda di sini. Selain itu, Anda juga dapat temukan UID Anda di pojok bawah
+            kanan layar.
         </p>
 
     </div>
@@ -62,6 +67,17 @@
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">2. Pilih Nominal Top Up</p>
+        <p style="color: #17232f;">Pilih Kategori</p>
+        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+        <label class="btn btn-secondary" for="option1" style="width: 30%;">
+            <img src="img/dm.png" alt="Diamond Image" style="max-width: 100%; height: auto; margin-right: 10px;">
+            Diamond
+        </label>
+        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+        <label class="btn btn-secondary" for="option2" style="width: 30%;">
+            <img src="img/bundleml.png" alt="Bundle" style="max-width: 100%; height: auto; margin-right: 10px;">
+            Bundle
+        </label>
         <p style="color: #17232f; margin-top: 20px;">Pilih items</p>
         <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
         <label class="btn btn-secondary" for="option1">Radio</label>
@@ -80,45 +96,33 @@
         </div>
     </div>
 
+    <div class="floating-login">
+        <a href="/login">
+            <button>Login</button></a>
+    </div>
+
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 100%; text-align: center;">
-        <p style="color: #17232f; font-size: 1.25rem; font-weight: bold;">Beli Diamond Garena Free Fire (FF) hanya di
-            Alstore</p>
+        <p style="color: #17232f; font-size: 1.25rem; font-weight: bold;">Tempat Top Up Genshin Impact Nomor 1 di
+            Indonesia</p>
         <p
             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
-            Tinggal selangkah lagi! Dengan membeli Diamond, Kamu bisa menikmati beragam fitur dalam game, seperti
-            membeli skin terbaru, item in-game premium, karakter baru, event eksklusif, dan masih banyak lagi!
-        </p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto;">
-            Nikmati pengalaman top up melalui Codashop, yang terjamin resmi, aman, dan mudah. Kami telah dipercaya
-            sebagai platform top up pilihan oleh jutaan gamers & pengguna aplikasi di Indonesia.
+            Hanya butuh beberapa detik saja untuk membeli Genesis Crystals untuk Genshin Impact. Beli Primogems untuk
+            "wish" atau supply bundles di dalam gift shop pakai Genesis Crystals. Kami dipercaya oleh jutaan gamers &
+            pengguna aplikasi di Asia Tenggara termasuk di Indonesia.
             <a href="#" style="display: block;">Klik disini untuk memulai top up.</a>
         </p>
-        <p style="color: #17232f; font-size: .875rem; margin-top: 30px; font-weight: bold;">Mengapa memilih Alstore
-            untuk top up
-            Garena Free FIre?</p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Mudah dan Cepat</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Kamu hanya perlu hitungan detik untuk menyelesaikan pembelian di Alstore.
+        <p style="color: #17232f; font-size: .875rem; margin-top: 30px; font-weight: bold;">Tentang Genshin Impact:
         </p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Garansi sampai</p>
         <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Free Fire pembelian dijamin langsung masuk ke akun Kamu.
-        </p>
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Customer support kelas dunia</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Tim customer support Kami selalu siap membantu 24jam. Kirim pesanmu melalui <a href='#'>form
-                berikut</a>, dan Kami akan respon segera!
-        </p>
-
-        <p style="color: #17232f; font-size: .875rem; font-weight: bold;">Promo Menarik</p>
-        <p
-            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-top: -15px; margin-left: auto; margin-right: auto;">
-            Jangan lewatkan deals terbaik, giveaways, dan masih banyak lagi, hanya di Alstore!
+            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; margin-top: -15px;">
+            Jelajahi luasnya semesta penuh dengan petualangan dalam game open-world terbaru dari HoYoverse. Masuklah ke
+            Tevyat, dunia yang penuh dengan kehidupan dan berbagai kekuatan. Kamu dan saudaramu sampai ke dunia ini dari
+            semesta lain. Terpisahkan oleh Dewa yang masih menjadi misteri, kekuatanmu dirampas, dan dibuang ke dalam
+            tidur yang sangat lelap, kemudian terbangun di dalam dunia yang sangat berbeda. Lalu kamu memulai
+            petualanganmu melewati Teyvat untuk mencari jawaban dari Sang Ketujuh - Dewa dari segala elemen. Dalam
+            perjalanan, persiapkan diri untuk menyusuri setiap sudut dunia yang menakjubkan, gabungkan kekuatan berbagai
+            tipe karakter, dan ungkap misteri demi misteri Teyvat untuk menjawab semuanya.
         </p>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -127,23 +131,23 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Bagaimana cara top up Garena Free Fire?
+                        Bagaimana Cara Top up Genesis Crystal Genshin Impact?
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
                     <p
-                        style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
-                        1. Kunjungin Alstore/FreeFire
-                        2. Masukan Player ID Free Fire
-                        3. Masukkan jumlah diamond yang Kamu inginkan
-                        4. Menyelesaikan transaksi-mu dan diamond akan langsung terkirim ke akun Free Fire-mu.
-                    </p>
-                    <p
-                        style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
-                        Kamu juga bisa kirim Diamonds ke teman dan keluarga kamu dengan cara ketik Player ID mereka.
-                    </p>
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/GenshinImpact
+                            2. Masukan UID dan Server Akun Genshin
+                            3. Pilih jumlah Genesis yang kamu inginkan.
+                            4. Menyelesaikan transaksi-mu dan Genesis akan langsung terkirim ke akun Genshin-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan Server mereka.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -153,13 +157,23 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
                         style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Dapatkan info terbaru & penawaran terbaik dari Free Fire
+                        Top Up Blessing of the Welkin Moon
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Tentu saja semua ada di Instagram Alstore
+                    <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/GenshinImpact
+                            2. Masukan UID dan Server Akun Genshin
+                            3. Pilih penawaran Blessing of the Welkin Moon.
+                            4. Menyelesaikan transaksi-mu dan Genesis akan langsung terkirim ke akun Genshin-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan Server mereka.
+                        </p>
                     </div>
                 </div>
             </div>
