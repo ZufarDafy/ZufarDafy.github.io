@@ -64,7 +64,6 @@
         <div>Honkai Star Rail</div>
     </div>
   </div>
-  @endsection
 
   <div class="baris-game">
     <div class="game-block">
