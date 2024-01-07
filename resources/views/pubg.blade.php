@@ -117,9 +117,16 @@
             <input id="namaProdukInput" type="text" class="form-control" placeholder="Nama Produk"
                 aria-label="Nama Produk" readonly>
         </div>
+        @auth
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button" onclick="beliSekarang()">Beli sekarang</button>
+          @csrf
+            <button class="btn btn-primary me-md-2" type="button">Beli sekarang</button>
         </div>
+        @else
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="/login"><button class="btn btn-primary me-md-2" type="button">Silahkan Login</button></a>
+        </div>
+        @endauth
     </div>
 
     <div

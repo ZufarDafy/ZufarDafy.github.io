@@ -25,7 +25,7 @@
           <a class="nav-link {{ ($title == "Login") ? 'active' : '' }}" href="/login">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($title == "Login") ? 'active' : '' }}" href="/login">Registrasi</a>
+          <a class="nav-link {{ ($title == "Login") ? 'active' : '' }}" href="/register">Registrasi</a>
         </li>
         @endauth
       </ul>
