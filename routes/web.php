@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EditgameController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\Controllers\LoginController;
@@ -29,18 +30,20 @@ Route::get('/ml', function () {
 Route::get('/ff', function () {
     return view('ff');
 });
-Route::get('/admin', function () {
-    return view('admin', [
-        "title" => "Admin"
-    ]);
-});
+// Route::get('/admin', function () {
+//     return view('admin', [
+//         "title" => "Admin"
+//     ]);
+// });
 
-Route::get('/editgame', function () {
-    return view('editgame', [
-        "title" => "Mobile Legends",
-        "game" => "ML"
-    ]);
-});
+
+// Route::get('/editgame', function () {
+//     return view('editgame', [
+//         "title" => "Mobile Legends",
+//         "game" => "ML"
+//     ]);
+// });
+
 
 Route::get('/daftaruser', function () {
     return view('daftaruser', [
@@ -49,12 +52,12 @@ Route::get('/daftaruser', function () {
     ]);
 });
 
-Route::get('/coba', function () {
-    return view('coba', [
-        "title" => "Mobile Legends",
-        "game" => "ML"
-    ]);
-});
+// Route::get('/coba', function () {
+//     return view('coba', [
+//         "title" => "Mobile Legends",
+//         "game" => "ML"
+//     ]);
+// });
 
 Route::get('/coba', function () {
     return view('transaksi', [
@@ -69,3 +72,5 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/editgame', [EditgameController::class, 'index']);
+Route::GET('/editgame/{game_id}', [EditgameController::class, 'show']);

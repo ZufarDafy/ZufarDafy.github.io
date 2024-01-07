@@ -8,38 +8,45 @@
 
       <div id="container2">
           <div class="baris-game">
-            <a href="/editgame/{{ $title }}">
+            <a href="/editgame/1">
               <div class="game-block" style="margin-right: 50px">
                 <img src="img/ML.png" alt="Mobile Legends" class="game-icon">
                 <div>Mobile Legends</div>
               </div>
             </a>
-        
-            <div class="game-block">
-              <img src="img/Honkai.png" alt="Honkai Star Rail" class="game-icon">
-              <div>Honkai Star Rail</div>
-            </div>
-        
-            <div class="game-block" style="margin-left: 50px">
-              <img src="img/Fifa.png" alt="FIFA Mobile" class="game-icon">
-              <div>FIFA Mobile</div>
-            </div>
+            <a href="/editgame/2">
+              <div class="game-block">
+                <img src="img/Honkai.png" alt="Honkai Star Rail" class="game-icon">
+                <div>Honkai Star Rail</div>
+              </div>
+            </a>
+            <a href="/editgame/3">
+              <div class="game-block" style="margin-left: 50px">
+                <img src="img/Fifa.png" alt="FIFA Mobile" class="game-icon">
+                <div>FIFA Mobile</div>
+              </div>
+            </a>
           </div>
-          <div class="baris-game">
-            <div class="game-block">
-              <img src="img/FF.png" alt="Free Fire" class="game-icon">
-              <div>Free Fire</div>
-            </div>
-        
+          <a href="/editgame/4">
+            <div class="baris-game">
+              <div class="game-block">
+                <img src="img/FF.png" alt="Free Fire" class="game-icon">
+                <div>Free Fire</div>
+              </div>
+          </a>
+          <a href="/editgame/5">
             <div class="game-block">
               <img src="img/Valo.png" alt="Valorant" class="game-icon">
               <div>Valorant</div>
             </div>
-        
+          </a>
+          
+          <a href="/editgame/6">
             <div class="game-block">
               <img src="img/COD.png" alt="COD Mobile" class="game-icon">
               <div>COD Mobile</div>
             </div>
+          </a>
           </div>
           <div class="baris-game">
             <div class="game-block" style="margin-right: 50px">

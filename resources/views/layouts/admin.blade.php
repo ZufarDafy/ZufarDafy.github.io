@@ -32,8 +32,10 @@
             </tr>
             <tr>
               <td scope="row">
-                  <img src="img/users.png" alt="Users">  
-                  <div class="title " style="{{ ($title == "Daftar Users") ? 'color: orange' : ''  }}" >Users</div>
+                  <img src="img/users.png" alt="Users"> 
+                  <a href="/daftaruser">
+                    <div class="title " style="{{ ($title == "Daftar Users") ? 'color: orange' : ''  }}" >Users</div>
+                  </a> 
               </td>
             </tr>
             <tr>

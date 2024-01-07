@@ -26,6 +26,7 @@
             <td>Rp {{ $user->acoin }}</td>
             <td>Lihat</td>
           </tr>
+          
           @endforeach
         </tbody>
       </table>

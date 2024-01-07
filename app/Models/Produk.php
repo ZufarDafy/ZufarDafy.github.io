@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Transaksi extends Model
+class Produk extends Model
 {
     use HasFactory;
 
     protected $guarded = ['id'];
 
-    public function Game(){
-    return $this->belongsTo(Game::class);
+    public function game(){
+        return $this->belongsTo(Game::class);
     }
+
 }
