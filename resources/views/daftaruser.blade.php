@@ -18,24 +18,15 @@
           </tr>
         </thead>
         <tbody>
+          @foreach ($list as $user)
+              
           <tr>
-            <th scope="row">1</th>
-            <td>Muhammad</td>
-            <td>Rp 20.000</td>
+            <th scope="row">{{ $loop->iteration }}</th>
+            <td> {{ $user->username }} </td>
+            <td>Rp {{ $user->acoin }}</td>
             <td>Lihat</td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Zufar</td>
-            <td>Rp 40.000</td>
-            <td>Lihat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Dafy</td>
-            <td>Rp 50.000</td>
-            <td>Lihat</td>
-          </tr>
+          @endforeach
         </tbody>
       </table>
   </main>
