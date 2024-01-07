@@ -133,8 +133,17 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                    <p
+                        style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                        1. Kunjungin Alstore/FreeFire
+                        2. Masukan Player ID Free Fire
+                        3. Masukkan jumlah diamond yang Kamu inginkan
+                        4. Menyelesaikan transaksi-mu dan diamond akan langsung terkirim ke akun Free Fire-mu.
+                    </p>
+                    <p
+                        style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                        Kamu juga bisa kirim Diamonds ke teman dan keluarga kamu dengan cara ketik Player ID mereka.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -150,8 +159,7 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body.
+                        Tentu saja semua ada di Instagram Alstore
                     </div>
                 </div>
             </div>

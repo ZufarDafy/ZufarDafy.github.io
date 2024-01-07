@@ -129,25 +129,17 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item" style="margin-bottom: 20px;">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
-                        style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Bagaimana Cara Beli VALORANT Battle Pass?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
-                    style="background-color: #F0F0F0; color: #17232f">
-                    <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second item's accordion body.
+                    <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/Valorant
+                            2. Masukan Riot ID
+                            3. Pilih jumlah Point yang kamu inginkan.
+                            4. Menyelesaikan transaksi-mu dan Point akan langsung terkirim ke akun Valorant-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik Riot ID mereka.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -163,8 +155,7 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body.
+                        Lihat semua promo di Instagram Alstore atau join Grubnya
                     </div>
                 </div>
             </div>

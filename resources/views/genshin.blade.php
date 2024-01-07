@@ -137,8 +137,17 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                    <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/GenshinImpact
+                            2. Masukan UID dan Server Akun Genshin
+                            3. Pilih jumlah Genesis yang kamu inginkan.
+                            4. Menyelesaikan transaksi-mu dan Genesis akan langsung terkirim ke akun Genshin-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan Server mereka.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -154,8 +163,17 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body.
+                    <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/GenshinImpact
+                            2. Masukan UID dan Server Akun Genshin
+                            3. Pilih penawaran Blessing of the Welkin Moon.
+                            4. Menyelesaikan transaksi-mu dan Genesis akan langsung terkirim ke akun Genshin-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan Server mereka.
+                        </p>
                     </div>
                 </div>
             </div>

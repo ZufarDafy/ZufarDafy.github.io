@@ -90,8 +90,7 @@
     </div>
 
     <div class="floating-login">
-        <a href="/login">
-            <button>Login</button></a>
+        <button>Saldo: </button></a>
     </div>
 
     <div
@@ -166,8 +165,18 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/MobileLegends
+                            2. Masukan User ID dan Zone ID MLBB.
+                            3. Pilih jumlah diamond yang kamu inginkan.
+                            4. Menyelesaikan transaksi-mu dan diamond akan langsung terkirim ke akun MLBB-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Diamonds ke teman dan keluarga kamu dengan cara ketik user ID dan Zone
+                            ID mereka.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -182,55 +191,48 @@
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
-                    <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second item's accordion body.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item" style="margin-bottom: 20px;">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
-                        style="font-size: 1.25rem; background-color: #F0F0F0; color: #17232f">
-                        Dimana dapat menemukan promo dan penawaran untuk Mobile Legends?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
-                    <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body.
-                    </div>
+                    <p
+                        style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                        1. Kunjungin Alstore/MobileLegends
+                        2. Masukan User ID dan Zone ID MLBB.
+                        3. Pilih penawaran Twilight Pass.
+                        4. Menyelesaikan transaksi-mu dan diamond akan langsung terkirim ke akun MLBB-mu.
+                    </p>
+                    <p
+                        style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                        Kamu juga bisa kirim Diamonds ke teman dan keluarga kamu dengan cara ketik user ID dan Zone
+                        ID mereka.
+                    </p>
                 </div>
             </div>
         </div>
-        <!--Beres Text -->
-    </div>
 
-    <div style="background-color: #E8F953; padding: 20px; display: inline-block; width: 100%; text-align: left;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 70px;">Butuh Bantuan?</p>
-        <button type="button" class="btn btn-light"
-            style="margin-top: -10px; background-color: #C0D603; color: black; border-radius: 7px; padding: 10px; width: 140px; height: 35px; display: flex; justify-content: center; align-items: center;"
-            onclick="window.location.href='https://wa.me/62881025872869?text=Halo%20bang%20aku%20mau%20nanya.';">
-            <img src="img/diss.png" alt="Icon" style="width: 20px; height: 20px; margin-right: 5px; margin-left: -5px;">
-            <span style="font-size: 14px;">Hubungi Kami</span>
-        </button>
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 40px;">Bahasa:</p>
-        <div class="card-body"
-            style="margin-top: -10px; background-color: #C0D603; color: black; border-radius: 7px; padding: 10px; width: 140px; height: 35px; display: flex; justify-content: center; align-items: center;">
-            <img src="img/indo.png" alt="Icon" style="width: 25px; height: 25px; margin-right:10px; margin-left: -5px;">
-            <span style="font-size: 18px;">Indonesia</span>
-        </div>
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 40px; margin-bottom: 5px;">
-            Dapatkan berita Alstore di:
-        </p>
-        <a href="https://www.instagram.com/alstore.04/" target="_blank"><img src="img/ig.png"
-                style="width: 24px; height: 24px; margin-right: 5px;"></a>
-        <a href="https://chat.whatsapp.com/JZ7dFXxRfd1GYoC3qD9rWt" target="_blank"><img src="img/wa.png"
-                style="width: 24px; height: 24px; margin-right: 10px;"></a>
     </div>
+    <!--Beres Text -->
+</div>
+
+<div style="background-color: #E8F953; padding: 20px; display: inline-block; width: 100%; text-align: left;">
+    <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 70px;">Butuh Bantuan?</p>
+    <button type="button" class="btn btn-light"
+        style="margin-top: -10px; background-color: #C0D603; color: black; border-radius: 7px; padding: 10px; width: 140px; height: 35px; display: flex; justify-content: center; align-items: center;"
+        onclick="window.location.href='https://wa.me/62881025872869?text=Halo%20bang%20aku%20mau%20nanya.';">
+        <img src="img/diss.png" alt="Icon" style="width: 20px; height: 20px; margin-right: 5px; margin-left: -5px;">
+        <span style="font-size: 14px;">Hubungi Kami</span>
+    </button>
+    <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 40px;">Bahasa:</p>
+    <div class="card-body"
+        style="margin-top: -10px; background-color: #C0D603; color: black; border-radius: 7px; padding: 10px; width: 140px; height: 35px; display: flex; justify-content: center; align-items: center;">
+        <img src="img/indo.png" alt="Icon" style="width: 25px; height: 25px; margin-right:10px; margin-left: -5px;">
+        <span style="font-size: 18px;">Indonesia</span>
+    </div>
+    <p style="color: #17232f; font-size: 1.125rem; font-weight: bold; margin-top: 40px; margin-bottom: 5px;">
+        Dapatkan berita Alstore di:
+    </p>
+    <a href="https://www.instagram.com/alstore.04/" target="_blank"><img src="img/ig.png"
+            style="width: 24px; height: 24px; margin-right: 5px;"></a>
+    <a href="https://chat.whatsapp.com/JZ7dFXxRfd1GYoC3qD9rWt" target="_blank"><img src="img/wa.png"
+            style="width: 24px; height: 24px; margin-right: 10px;"></a>
+</div>
 
 </div>
 

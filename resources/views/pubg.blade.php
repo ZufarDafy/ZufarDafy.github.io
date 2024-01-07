@@ -65,9 +65,9 @@
     </div>
 
     <div class="floating-login">
-        <a href="/login">
-            <button>Login</button></a>
-    </div>
+    <a href="/login">
+      <button>Login</button></a>
+  </div>
 
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
@@ -133,8 +133,17 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                    <p
+                        style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                        1. Kunjungin Alstore/PUBGMobile
+                        2. Masukan Player ID PUBGM.
+                        3. Pilih jumlah diamond yang kamu inginkan.
+                        4. Menyelesaikan transaksi-mu dan UC akan langsung terkirim ke akun PUBGM-mu.
+                    </p>
+                    <p
+                        style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                        Kamu juga bisa kirim UC ke teman dan keluarga kamu dengan cara ketik Player ID mereka.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -150,8 +159,17 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second item's accordion body.
+                    <p
+                        style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                        1. Kunjungin Alstore/PUBGMobile
+                        2. Masukan Player ID PUBGM.
+                        3. Pilih penawaran Royale Pass.
+                        4. Menyelesaikan transaksi-mu dan UC akan langsung terkirim ke akun PUBG-mu.
+                    </p>
+                    <p
+                        style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                        Kamu juga bisa kirim UC ke teman dan keluarga kamu dengan cara ketik Player ID mereka.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -167,8 +185,7 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body.
+                        Tentu saja semua informasi ada di Instagram Alstore
                     </div>
                 </div>
             </div>

@@ -123,8 +123,17 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/CODMobile
+                            2. Masukan OpenID Akun CODM-mu
+                            3. Pilih jumlah CP yang kamu inginkan.
+                            4. Menyelesaikan transaksi-mu dan CP akan langsung terkirim ke akun CODM-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim CP ke teman dan keluarga kamu dengan cara ketik OpenID mereka.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -140,8 +149,7 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                        Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body.
+                        Tentu saja semua ada di Instagram Alstore
                     </div>
                 </div>
             </div>
