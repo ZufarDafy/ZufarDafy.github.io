@@ -295,7 +295,6 @@
 </footer>
 
 <script>
-    // Bagian JavaScript
     function beliSekarang() {
         // Mendapatkan nilai harga dari tombol yang dipilih
         var selectedProduct = document.querySelector('.product-button.active');
@@ -319,6 +318,8 @@
             button.classList.toggle('active');
         });
     });
+</script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   $(document).ready(function() {
