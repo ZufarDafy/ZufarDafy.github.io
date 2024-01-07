@@ -15,29 +15,6 @@ body {
     margin-left: 18px;
 }
 
-.floating-login {
-    position: fixed;
-    bottom: 20px; /* Sesuaikan dengan posisi yang diinginkan */
-    left: 0px; /* Sesuaikan dengan posisi yang diinginkan */
-  }
-  
-  .floating-login button {
-    color: white;
-    background-color: #203f5e;
-    border: none;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
-    width: 120px;
-    height: 35px;
-  }
-  
-  /* Penerapan efek hover untuk tombol */
-  .floating-login button:hover {
-    background: rgb(121, 121, 136); /* Sesuaikan dengan warna yang diinginkan */
-    color: black; /* Sesuaikan dengan warna hover yang diinginkan */
-  }
-  
-
 nav {
     display: flex;
     align-items: center;
@@ -49,16 +26,8 @@ nav {
     line-height: 200px;
 }
 
-
-#see-all-button {
-    text-align: center;
-    cursor: pointer;
-    color: #E8F953;
-    text-decoration: underline;
-}
-
-#container2 .hidden {
-    display: none;
+#container2 {
+    height: 414px;
 }
 
 #text-block {
@@ -95,7 +64,3 @@ nav {
     height: 80px;
     margin-bottom: 5px;
 }
-
-.grayscale {
-    filter: grayscale(100%);
-  }

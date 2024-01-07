@@ -24,17 +24,11 @@ Route::get('/', function () {
 });
 
 Route::get('/ml', function () {
-    return view('ml', [
-        "title" => "Mobile Legends"
-    ]);
+    return view('ml');
 });
 
-
-
 Route::get('/ff', function () {
-    return view('ff', [
-        "title" => "Free Fire"
-    ]);
+    return view('ff');
 });
 // Route::get('/admin', function () {
 //     return view('admin', [
@@ -49,36 +43,6 @@ Route::get('/ff', function () {
 //         "game" => "ML"
 //     ]);
 // });
-
-Route::get('/cod', function () {
-    return view('cod', [
-        "title" => "Call Of Duty Mobile"
-    ]);
-});
-
-Route::get('/pubg', function () {
-    return view('pubg', [
-        "title" => "PUBG Mobile"
-    ]);
-});
-
-Route::get('/valo', function () {
-    return view('valo', [
-        "title" => "Valorant"
-    ]);
-});
-
-Route::get('/genshin', function () {
-    return view('genshin', [
-        "title" => "Genshin Impact"
-    ]);
-});
-
-Route::get('/admin', function () {
-    return view('admin', [
-        "title" => "Admin"
-    ]);
-});
 
 
 Route::get('/daftaruser', function () {
