@@ -11,9 +11,17 @@
           <li class="nav-item">
             <a class="nav-link {{ ($title == "Home") ? 'active' : '' }}" aria-current="page" href="/">Home</a>
           </li>
+          
+          @auth
+          <form action="/logout" method="post">
+            @csrf
+            <button type="submit" class="nav-link {{ ($title == "Login") ? 'active' : '' }}"><div class="title">Log Out</div></button>
+          </form>
+          @else
           <li class="nav-item">
             <a class="nav-link {{ ($title == "Login") ? 'active' : '' }}" href="/login">Login</a>
           </li>
+          @endauth
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>

@@ -33,10 +33,13 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
   <div id="container2">
-    <div id="text-block">Game List</div>
 
+    @auth
+    <div style="margin: 20px">Selamat Datang, {{ auth()->user()->username }} ! </div>
+    @endauth
+
+    <div id="text-block">Game List</div>
     <div class="baris-game">
       <div class="game-block">
         <a href="/ml" style="color: white; text-decoration: none;">

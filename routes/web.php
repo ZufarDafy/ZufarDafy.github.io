@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -43,7 +44,8 @@ Route::get('/editgame', function () {
 
 Route::get('/daftaruser', function () {
     return view('daftaruser', [
-        "title" => "Daftar Users"
+        "title" => "Daftar Users",
+        'list' => User::all()
     ]);
 });
 
@@ -55,4 +57,8 @@ Route::get('/coba', function () {
 });
 
 Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
 Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
