@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProdukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,3 +101,10 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/ml', [ProdukController::class, 'index']);
+Route::get('/ff', [ProdukController::class, 'indexFF']);
+Route::get('/valo', [ProdukController::class, 'indexValorant']);
+Route::get('/genshin', [ProdukController::class, 'indexGenshin']);
+Route::get('/pubg', [ProdukController::class, 'indexPUBGMobile']);
+Route::get('/cod', [ProdukController::class, 'indexCODMobile']);

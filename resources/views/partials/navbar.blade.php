@@ -21,10 +21,10 @@
           <li class="nav-item">
             <a class="nav-link {{ ($title == "Login") ? 'active' : '' }}" href="/login">Login</a>
           </li>
-          @endauth
           <li class="nav-item">
             <a class="nav-link {{ ($title == "Login") ? 'active' : '' }}" href="/login">Registrasi</a>
           </li>
+          @endauth
         </ul>
       </div>
     </div>

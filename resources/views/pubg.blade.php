@@ -58,10 +58,16 @@
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">2. Pilih Nominal Top Up</p>
         <p style="color: #17232f; margin-top: 20px;">Pilih items</p>
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">Radio</label>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2">Radio</label>
+        <p style="color: #17232f; font-size: .750rem; margin-top: -15px;">*Klik Item 2 kali</p>
+        @foreach($produks as $p)
+        <div class="btn-group" style="margin-bottom: 10px; max-width: 46%;">
+            <button type="button" onclick="beliSekarang()" class="btn product-button" data-harga="{{ $p->harga }}"
+                data-nama="{{ $p->nama_produk }}" style="background-color: #17232f; color: white;">
+                <img src="img/uc.png" alt="Product Image" style="max-width: 75%; height: auto; margin-right: 5px;">
+                {{ $p->nama_produk }}
+            </button>
+        </div>
+        @endforeach
     </div>
 
     @auth
@@ -104,12 +110,16 @@
 
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">3. Payment</p>
+        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">3. Pembayaran</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Harga" aria-label="Username">
+            <input id="hargaInput" type="text" class="form-control" placeholder="Harga" aria-label="Harga" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <input id="namaProdukInput" type="text" class="form-control" placeholder="Nama Produk"
+                aria-label="Nama Produk" readonly>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button">Beli sekarang</button>
+            <button class="btn btn-primary me-md-2" type="button" onclick="beliSekarang()">Beli sekarang</button>
         </div>
     </div>
 
@@ -254,5 +264,32 @@
 <footer style="background-color: #F0F0F0; color: black; padding: 10px; text-align: center;">
     <p style="margin-top: 10px;">&copy; 2024 Alstore. All rights reserved.</p>
 </footer>
+
+<script>
+    // Bagian JavaScript
+    function beliSekarang() {
+        // Mendapatkan nilai harga dari tombol yang dipilih
+        var selectedProduct = document.querySelector('.product-button.active');
+        var hargaProduk = selectedProduct ? selectedProduct.dataset.harga : 0;
+        var namaProduk = selectedProduct ? selectedProduct.dataset.nama : '';
+
+        // Memperbarui nilai input harga dan nama produk
+        document.getElementById('hargaInput').value = hargaProduk;
+        document.getElementById('namaProdukInput').value = namaProduk;
+
+        // Menonaktifkan tombol setelah beberapa detik
+        setTimeout(function () {
+            selectedProduct.classList.remove('active');
+        }, 2000); // Ganti angka 2000 dengan jumlah milidetik yang diinginkan
+    }
+
+    // Menangani acara klik pada tombol produk
+    document.querySelectorAll('.product-button').forEach(function (button) {
+        button.addEventListener('click', function () {
+            // Toggle kelas aktif pada tombol yang dipilih
+            button.classList.toggle('active');
+        });
+    });
+</script>
 
 @endsection

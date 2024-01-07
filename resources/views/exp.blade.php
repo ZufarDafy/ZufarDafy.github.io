@@ -31,17 +31,16 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+
+@auth
+  <div style="margin: 20px font-weight: bold; font-size: .875rem; margin-top: 40px; margin-bottom: -40px; margin-left: 5%; font-family: 'Lemon', serif;">Selamat Datang, {{ auth()->user()->username }} ! </div>
+  @endauth
 <div id="container2">
   <div id="text-block" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 10px; font-family: 'Lemon', serif;">
     Lebih Hemat di
     Alstore</div>
 
-
-  @auth
-  <div style="margin: 20px">Selamat Datang, {{ auth()->user()->username }} ! </div>
-  @endauth
-
-  <div id="text-block">Game List</div>
   <div class="baris-game">
     <!-- Add hidden class to the game-block elements you want to initially hide -->
     <div class="game-block">

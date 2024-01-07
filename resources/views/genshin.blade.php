@@ -67,32 +67,53 @@
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">2. Pilih Nominal Top Up</p>
-        <p style="color: #17232f;">Pilih Kategori</p>
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1" style="width: 30%;">
-            <img src="img/dm.png" alt="Diamond Image" style="max-width: 100%; height: auto; margin-right: 10px;">
-            Diamond
-        </label>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2" style="width: 30%;">
-            <img src="img/bundleml.png" alt="Bundle" style="max-width: 100%; height: auto; margin-right: 10px;">
-            Bundle
-        </label>
-        <p style="color: #17232f; margin-top: 20px;">Pilih items</p>
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">Radio</label>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2">Radio</label>
+        <div
+            style="background-color: #17232f; color:  white; display: flex;  align-items: center;  margin-top: 10px; border-radius: 10px;">
+            <img src="img/dm.png" alt="Icon" style="width: 70px; height: 70px; margin-right:10px; margin-left: 0px;">
+            <span style="font-size: 1.275rem; text-align: left; margin-bottom: 0;">Item</span>
+        </div>
+        <p style="color: #17232f; margin-top: 30px;">Pilih items</p>
+        <p style="color: #17232f; font-size: .750rem; margin-top: -15px;">*Klik Item 2 kali</p>
+        @foreach($produksItem as $p)
+        <div class="btn-group" style="margin-bottom: 10px; max-width: 46%;">
+            <button type="button" onclick="beliSekarang()" class="btn product-button" data-harga="{{ $p->harga }}"
+                data-nama="{{ $p->nama_produk }}" style="background-color: #17232f; color: white;">
+                <img src="img/genesis.png" alt="Product Image" style="max-width: 70%; height: auto; margin-right: 5px;">
+                {{ $p->nama_produk }}
+            </button>
+        </div>
+        @endforeach
+
+        <div
+            style="background-color: #17232f; color:  white; display: flex;  align-items: center;  margin-top:50px; border-radius: 10px;">
+            <img src="img/bundleml.png" alt="Icon"
+                style="width: 70px; height: 70px; margin-right:10px; margin-left: 0px;">
+            <span style="font-size: 1.275rem; text-align: left; margin-bottom: 0;">Bundle</span>
+        </div>
+        <p style="color: #17232f; margin-top: 30px;">Pilih items</p>
+        @foreach($produksBundle as $a)
+        <div class="btn-group" style="margin-bottom: 10px; max-width: 46%;">
+            <button type="button" onclick="beliSekarang()" class="btn product-button" data-harga="{{ $a->harga }}"
+                data-nama="{{ $a->nama_produk }}" style="background-color: #17232f; color: white;">
+                <img src="img/genesis.png" alt="Product Image" style="max-width: 50%; height: auto; margin-right: 5px;">
+                {{ $a->nama_produk }}
+            </button>
+        </div>
+        @endforeach
     </div>
 
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">3. Payment</p>
+        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">3. Pembayaran</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Harga" aria-label="Username">
+            <input id="hargaInput" type="text" class="form-control" placeholder="Harga" aria-label="Harga" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <input id="namaProdukInput" type="text" class="form-control" placeholder="Nama Produk"
+                aria-label="Nama Produk" readonly>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button">Beli sekarang</button>
+            <button class="btn btn-primary me-md-2" type="button" onclick="beliSekarang()">Beli sekarang</button>
         </div>
     </div>
 
@@ -170,7 +191,7 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                    <p
+                        <p
                             style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
                             1. Kunjungin Alstore/GenshinImpact
                             2. Masukan UID dan Server Akun Genshin
@@ -179,7 +200,8 @@
                         </p>
                         <p
                             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
-                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan Server mereka.
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan
+                            Server mereka.
                         </p>
                     </div>
                 </div>
@@ -196,7 +218,7 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample" style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                    <p
+                        <p
                             style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
                             1. Kunjungin Alstore/GenshinImpact
                             2. Masukan UID dan Server Akun Genshin
@@ -205,7 +227,8 @@
                         </p>
                         <p
                             style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
-                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan Server mereka.
+                            Kamu juga bisa kirim Genesis ke teman dan keluarga kamu dengan cara ketik user UID dan
+                            Server mereka.
                         </p>
                     </div>
                 </div>
@@ -242,5 +265,32 @@
 <footer style="background-color: #F0F0F0; color: black; padding: 10px; text-align: center;">
     <p style="margin-top: 10px;">&copy; 2024 Alstore. All rights reserved.</p>
 </footer>
+
+<script>
+    // Bagian JavaScript
+    function beliSekarang() {
+        // Mendapatkan nilai harga dari tombol yang dipilih
+        var selectedProduct = document.querySelector('.product-button.active');
+        var hargaProduk = selectedProduct ? selectedProduct.dataset.harga : 0;
+        var namaProduk = selectedProduct ? selectedProduct.dataset.nama : '';
+
+        // Memperbarui nilai input harga dan nama produk
+        document.getElementById('hargaInput').value = hargaProduk;
+        document.getElementById('namaProdukInput').value = namaProduk;
+
+        // Menonaktifkan tombol setelah beberapa detik
+        setTimeout(function () {
+            selectedProduct.classList.remove('active');
+        }, 2000); // Ganti angka 2000 dengan jumlah milidetik yang diinginkan
+    }
+
+    // Menangani acara klik pada tombol produk
+    document.querySelectorAll('.product-button').forEach(function (button) {
+        button.addEventListener('click', function () {
+            // Toggle kelas aktif pada tombol yang dipilih
+            button.classList.toggle('active');
+        });
+    });
+</script>
 
 @endsection
