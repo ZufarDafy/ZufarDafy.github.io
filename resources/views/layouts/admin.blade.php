@@ -39,8 +39,11 @@
             </tr>
             <tr>
               <td scope="row">
-                  <img src="img/logout.png" alt="Log Out">  
-                  <a href="login"><div class="title">Log Out</div></a>
+                <img src="img/logout.png" alt="Log Out">  
+                <form action="/logout" method="post">
+                  @csrf
+                  <button type="submit" class="dropdown-item"><div class="title">Log Out</div></button>
+                </form>
               </td>
             </tr>
         </table>
