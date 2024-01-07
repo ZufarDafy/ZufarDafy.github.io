@@ -121,4 +121,4 @@ Route::get('/pubg', [ProdukController::class, 'indexPUBGMobile']);
 Route::get('/cod', [ProdukController::class, 'indexCODMobile']);
 Route::post('/top-up', [TopUpController::class, 'updateSaldo'])->name('topup.saldo');
 
-Route::post('/', [PaymentController::class, 'store'])->name('payment.test');
+Route::post('/payment', [PaymentController::class, 'store'])->name('payment.test');
