@@ -89,9 +89,13 @@
         </div>
     </div>
 
+    @auth
     <div class="floating-login">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#saldoModal">Saldo:</button>
+        @csrf
+        <button type="button" class="btn btn-primary btn-saldo" data-bs-toggle="modal" data-bs-target="#saldoModal"
+            style="text-align: left; width: 160px; height: 40px;">
+            Saldo: {{ auth()->user()->acoin }}
+        </button>
     </div>
 
     <div class="modal" id="saldoModal" tabindex="-1" aria-labelledby="saldoModalLabel" aria-hidden="true">
@@ -116,6 +120,12 @@
             </div>
         </div>
     </div>
+    @else
+    <div class="floating-login">
+        <a href="/login">
+            <button>Login</button></a>
+    </div>
+    @endauth
 
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 100%; text-align: center;">

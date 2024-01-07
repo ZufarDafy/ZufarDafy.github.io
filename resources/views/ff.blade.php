@@ -31,10 +31,43 @@
 
     </div>
 
+    @auth
+    <div class="floating-login">
+        @csrf
+        <button type="button" class="btn btn-primary btn-saldo" data-bs-toggle="modal" data-bs-target="#saldoModal"
+            style="text-align: left; width: 160px; height: 40px;">
+            Saldo: {{ auth()->user()->acoin }}
+        </button>
+    </div>
+
+    <div class="modal" id="saldoModal" tabindex="-1" aria-labelledby="saldoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="saldoModalLabel" style="color: black;">Recharge Saldo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/top-up" method="post" style="text-align: left;">
+                        <!-- Tambahkan elemen input untuk jumlah isi saldo di sini -->
+                        <label for="jumlah-saldo" class="form-label" style="color: black;">Jumlah Isi Saldo:</label>
+                        <input type="text" class="form-control" id="jumlah-saldo" name="jumlah-saldo"
+                            placeholder="Masukkan jumlah saldo">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- Tombol OK -->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @else
     <div class="floating-login">
         <a href="/login">
             <button>Login</button></a>
     </div>
+    @endauth
 
     <div
         style="background: linear-gradient(to right, #273A80, #482865); padding: 20px; display: flex; margin-top: 50px; width: 90%; text-align: left; border-radius: 10px; margin-left: 5%;">
@@ -133,17 +166,17 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
                     style="background-color: #F0F0F0; color: #17232f">
                     <div class="accordion-body">
-                    <p
-                        style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
-                        1. Kunjungin Alstore/FreeFire
-                        2. Masukan Player ID Free Fire
-                        3. Masukkan jumlah diamond yang Kamu inginkan
-                        4. Menyelesaikan transaksi-mu dan diamond akan langsung terkirim ke akun Free Fire-mu.
-                    </p>
-                    <p
-                        style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
-                        Kamu juga bisa kirim Diamonds ke teman dan keluarga kamu dengan cara ketik Player ID mereka.
-                    </p>
+                        <p
+                            style="font-size: .875rem; color: #17232f; width: 93%; margin-top: -20px; margin-left: 20px; margin-right: auto; text-align: left; white-space: pre-line;">
+                            1. Kunjungin Alstore/FreeFire
+                            2. Masukan Player ID Free Fire
+                            3. Masukkan jumlah diamond yang Kamu inginkan
+                            4. Menyelesaikan transaksi-mu dan diamond akan langsung terkirim ke akun Free Fire-mu.
+                        </p>
+                        <p
+                            style="font-size: .875rem; margin-top: 10px; color: #17232f; width: 93%; margin-left: auto; margin-right: auto; text-align: left;">
+                            Kamu juga bisa kirim Diamonds ke teman dan keluarga kamu dengan cara ketik Player ID mereka.
+                        </p>
                     </div>
                 </div>
             </div>
