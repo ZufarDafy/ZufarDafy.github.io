@@ -133,7 +133,7 @@
                         <div class="mb-3">
                             <label for="namaGame" class="form-label" style="color:black;">Nama Game:</label>
                             <input type="text" class="form-control" id="namaGame" name="namaGame" readonly
-                                value="Valorant"> <!-- Ganti dengan nama game yang sesuai -->
+                                value="Mobile Legends"> <!-- Ganti dengan nama game yang sesuai -->
                         </div>
                         <div class="mb-3">
                             <label for="namaProduk" class="form-label" style="color:black;">Nama Produk:</label>

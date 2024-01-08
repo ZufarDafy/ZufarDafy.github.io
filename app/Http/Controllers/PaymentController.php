@@ -43,7 +43,7 @@ class PaymentController extends Controller
         DB::table('transaksis')->insert([
             'TglTrans' => Carbon::now(),
             'uname' => auth()->user()->username,
-            'nama_game' => 'Mobile Legends', // Ganti dengan nama game yang sesuai
+            'nama_game' => $request->input('namaGame'), // Ganti dengan nama game yang sesuai
             'nama_produk' => $request->input('namaProduk'), // Mengambil nilai dari form
             'harga' => $request->input('harga'), // Mengambil nilai dari form
             'uid' => $request->input('uid'),
