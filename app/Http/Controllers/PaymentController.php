@@ -6,6 +6,7 @@ use App\Models\payment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
 class PaymentController extends Controller
@@ -48,6 +49,13 @@ class PaymentController extends Controller
             'uid' => $request->input('uid'),
             'proses' => 1,
         ]);
+
+        $user = Auth::user();
+        $newSaldo = $request->input('harga');
+
+
+        $user->acoin -= $newSaldo;
+        $user->save();
 
         return redirect()->back()->with('success', 'Transaksi berhasil!');
     }
