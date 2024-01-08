@@ -34,7 +34,7 @@ class DashboardPostController extends Controller
             'game_id' => $request->game_id,
             'harga' => $request->harga,
         ]);
-        redirect('/dashboard');
+        redirect('/dashboard/produks');
     }
 
     /**
@@ -68,6 +68,7 @@ class DashboardPostController extends Controller
      */
     public function destroy(Produk $produk)
     {
-        //
+        Produk::destroy($produk->id);
+        return redirect('/dashboard/produks')->with('success', "berhasil dihapus");
     }
 }

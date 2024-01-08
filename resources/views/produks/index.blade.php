@@ -27,7 +27,11 @@
           <td>
             <a href="/dashboard/produks/{{ $produk->slug }}" class="btn btn-info">Lihat</a>
             <a href="" class="btn btn-warning">Edit</a>
-            <a href="" class="btn btn-danger">Hapus</a>
+            <form action="/dashboard/produks/{{ $produk->slug }}" method="POST">
+              @method('delete')
+              @csrf
+              <button class="btn bg-danger">Hapus</button>
+            </form>
           </td>
         </tr>
         @endforeach

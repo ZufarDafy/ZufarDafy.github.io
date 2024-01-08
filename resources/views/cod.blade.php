@@ -45,7 +45,8 @@
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">1. Masukkan Player ID</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Masukkan Player ID" aria-label="Username">
+            <input type="text" class="form-control" placeholder="Masukkan Player ID" aria-label="Username" id="UIDD"
+                oninput="getUID()">
         </div>
         <p style="font-size: smaller; margin-top: 10px; color: #808080;">
             Untuk menemukan PlayerID Anda, klik ikon 'settings' yang terletak di sebelah kanan layar dan klik tab 'LEGAL
@@ -58,21 +59,82 @@
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
         <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">2. Pilih Nominal Top Up</p>
         <p style="color: #17232f; margin-top: 20px;">Pilih items</p>
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">Radio</label>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2">Radio</label>
+        <p style="color: #17232f; font-size: .750rem; margin-top: -15px;">*Klik Item 2 kali</p>
+        @foreach($produks as $p)
+        <div class="btn-group" style="margin-bottom: 10px; max-width: 46%;">
+            <button type="button" onclick="beliSekarang()" class="btn product-button" data-harga="{{ $p->harga }}"
+                data-nama="{{ $p->nama_produk }}" style="background-color: #17232f; color: white;">
+                <img src="img/cp.png" alt="Product Image" style="max-width: 70%; height: auto; margin-right: 5px;">
+                {{ $p->nama_produk }}
+            </button>
+        </div>
+        @endforeach
     </div>
 
     <div
         style="background-color: white; padding: 20px; display: inline-block; margin-top: 20px; width: 90%; text-align: left; border-radius: 10px;">
-        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">3. Payment</p>
+        <p style="color: #17232f; font-size: 1.125rem; font-weight: bold;">3. Pembayaran</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Harga" aria-label="Username">
+            <input id="hargaInput" type="text" class="form-control" placeholder="Harga" aria-label="Harga" readonly>
         </div>
+        <div class="input-group mb-3">
+            <input id="namaProdukInput" type="text" class="form-control" placeholder="Nama Produk"
+                aria-label="Nama Produk" readonly>
+        </div>
+        @auth
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button">Beli sekarang</button>
+            @csrf
+            <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+                Beli sekarang
+            </button>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Struk Pembelian</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Informasi Pembelian -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label" style="color:black;">Username:</label>
+                            <input type="text" class="form-control" id="username" name="username" readonly
+                                value="{{ auth()->user()->username }}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namaGame" class="form-label" style="color:black;">Nama Game:</label>
+                            <input type="text" class="form-control" id="namaGame" name="namaGame" readonly
+                                value="Valorant"> <!-- Ganti dengan nama game yang sesuai -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="namaProduk" class="form-label" style="color:black;">Nama Produk:</label>
+                            <input type="text" class="form-control" id="namaProduk" name="namaProduk" readonly>
+                            <!-- Isi nilai ini menggunakan JavaScript saat tombol beli diklik -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="harga" class="form-label" style="color:black;">Harga:</label>
+                            <input type="text" class="form-control" id="harga" name="harga" readonly>
+                            <!-- Isi nilai ini menggunakan JavaScript saat tombol beli diklik -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="uid" class="form-label" style="color:black;">UID:</label>
+                            <input type="text" class="form-control" id="uid" name="uid">
+                        </div>
+
+                        <!-- Tombol Submit -->
+                        <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @else
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="/login"><button class="btn btn-primary me-md-2" type="button">Silahkan Login</button></a>
+        </div>
+        @endauth
     </div>
 
     @auth
@@ -99,7 +161,7 @@
             </form>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="okButton" data-bs-dismiss="modal">OK</button>
+            <button type="submit" class="btn btn-primary" id="okButton" data-bs-dismiss="modal">OK</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
         </div>
@@ -217,6 +279,45 @@
 <footer style="background-color: #F0F0F0; color: black; padding: 10px; text-align: center;">
     <p style="margin-top: 10px;">&copy; 2024 Alstore. All rights reserved.</p>
 </footer>
+
+<script>
+    // Bagian JavaScript
+    function beliSekarang() {
+        // Mendapatkan nilai harga dari tombol yang dipilih
+        var selectedProduct = document.querySelector('.product-button.active');
+        var hargaProduk = selectedProduct ? selectedProduct.dataset.harga : 0;
+        var namaProduk = selectedProduct ? selectedProduct.dataset.nama : '';
+
+        // Memperbarui nilai input harga dan nama produk di form utama
+        document.getElementById('hargaInput').value = hargaProduk;
+        document.getElementById('namaProdukInput').value = namaProduk;
+
+        // Memperbarui nilai input harga dan nama produk di modal pembelian
+        document.getElementById('namaProduk').value = namaProduk;
+        document.getElementById('harga').value = hargaProduk;
+
+        // Menonaktifkan tombol setelah beberapa detik
+        setTimeout(function () {
+            selectedProduct.classList.remove('active');
+        }, 2000); // Ganti angka 2000 dengan jumlah milidetik yang diinginkan
+    }
+
+    // Menangani acara klik pada tombol produk
+    document.querySelectorAll('.product-button').forEach(function (button) {
+        button.addEventListener('click', function () {
+            // Toggle kelas aktif pada tombol yang dipilih
+            button.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<script>
+    function getUID() {
+        var uidInput = document.getElementById('UIDD');
+        document.getElementById('uid').value = uidInput.value;
+    }
+</script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>

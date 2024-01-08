@@ -19,6 +19,7 @@ body {
     position: fixed;
     bottom: 20px; /* Sesuaikan dengan posisi yang diinginkan */
     left: 0px; /* Sesuaikan dengan posisi yang diinginkan */
+    z-index: 1000;
   }
   
   .floating-login button {
